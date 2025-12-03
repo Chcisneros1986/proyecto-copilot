@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmos de Recorrido</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Algoritmos de Recorrido</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="post1.html">Introducción a los Grafos</a></li>
+                <li><a href="post2.html">Representación de Grafos</a></li>
+                <li><a href="post3.html">Algoritmos de Recorrido</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Búsqueda en Amplitud (BFS)</h2>
+        <p>La <strong>Búsqueda en Amplitud</strong> (Breadth-First Search, BFS) recorre el grafo nivel por nivel, utilizando una cola para explorar los nodos vecinos antes de avanzar a los siguientes niveles.</p>
+        <pre><code>// Pseudocódigo BFS
+BFS(grafo, nodo_inicial):
+    crear una cola Q
+    marcar nodo_inicial como visitado y ponerlo en Q
+    mientras Q no esté vacía:
+        nodo = Q.desencolar()
+        para cada vecino de nodo:
+            si vecino no ha sido visitado:
+                marcar como visitado y ponerlo en Q
+</code></pre>
+        <h2>Búsqueda en Profundidad (DFS)</h2>
+        <p>La <strong>Búsqueda en Profundidad</strong> (Depth-First Search, DFS) explora lo más profundo posible antes de retroceder, utilizando una pila (explícita o recursiva).</p>
+        <pre><code>// Pseudocódigo DFS
+DFS(grafo, nodo_inicial):
+    marcar nodo_inicial como visitado
+    para cada vecino de nodo_inicial:
+        si vecino no ha sido visitado:
+            DFS(grafo, vecino)
+</code></pre>
+    </main>
+    <div style="display: flex; justify-content: center; gap: 2em; margin-top: 2em;">
+            <a href="post2.html" style="text-decoration: none; background: #4f8cff; color: white; padding: 0.5em 1em; border-radius: 8px; font-weight: bold;">Atrás</a>
+            <a href="../index.html" style="text-decoration: none; background: #4f8cff; color: white; padding: 0.5em 1em; border-radius: 8px; font-weight: bold;">Inicio</a>
+        </div>
+    <footer>
+        <p>&copy; 2025 Blog Técnico sobre Grafos</p>
+    </footer>
+    <script src="../js/buttons.js"></script>
+</body>
+</html>

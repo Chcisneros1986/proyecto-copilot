@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Representación de Grafos</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Representación de Grafos</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="post1.html">Introducción a los Grafos</a></li>
+                <li><a href="post2.html">Representación de Grafos</a></li>
+                <li><a href="post3.html">Algoritmos de Recorrido</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Formas de representar un grafo</h2>
+        <h3>Lista de Adyacencia</h3>
+        <p>Utiliza una lista para cada nodo, donde se almacenan los nodos adyacentes. Es eficiente en espacio para grafos dispersos.</p>
+        <pre><code>{
+A: [B, C],
+B: [A, D],
+C: [A, D, E],
+D: [B, C],
+E: [C]
+}</code></pre>
+        <h3>Matriz de Adyacencia</h3>
+        <p>Utiliza una matriz donde las filas y columnas representan nodos. Un valor 1 indica la presencia de una arista. Es eficiente para consultar aristas.</p>
+        <pre><code>   A B C D E
+A 0 1 1 0 0
+B 1 0 0 1 0
+C 1 0 0 1 1
+D 0 1 1 0 0
+E 0 0 1 0 0
+</code></pre>
+        <h2>Ejemplo visual</h2>
+        <h3>Lista Adyacencia</h3>
+        <img src="C:\Users\Usuario\proyecto-copilot\proyecto-copilot\img\Lista-adyacencia.png" alt="Representación de un grafo" style="max-width:400px;display:block;margin:auto;">
+        <h3>Matriz de Adyacencia</h3>
+        <img src="C:\Users\Usuario\proyecto-copilot\proyecto-copilot\img\Matriz_de_adyacencia.jpg" alt="Representación de un grafo" style="max-width:400px;display:block;margin:auto;">
+
+    </main>
+   <div style="display: flex; justify-content: center; gap: 2em; margin-top: 2em;">
+            <a href="post1.html" style="text-decoration: none; background: #4f8cff; color: white; padding: 0.5em 1em; border-radius: 8px; font-weight: bold;">Atrás</a>
+            <a href="post3.html" style="text-decoration: none; background: #4f8cff; color: white; padding: 0.5em 1em; border-radius: 8px; font-weight: bold;">Siguiente</a>
+        </div>
+    <footer>
+        <p>&copy; 2025 Blog Técnico sobre Grafos</p>
+    </footer>
+ 
+</body>
+<script src="../js/buttons.js"></script>
+</html>
