@@ -1,2 +1,3 @@
-grafo_simple.png 
-representacion_grafo.png
+diagrama.png 
+lista adyacencia.png
+matriz adyacencia.png
