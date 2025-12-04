@@ -1,3 +1,3 @@
 diagrama.png 
 lista adyacencia.png
-matriz adyacencia.png
+matriz adyacencia.jpg
